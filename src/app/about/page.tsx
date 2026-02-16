@@ -60,7 +60,7 @@ export default function About() {
         path={about.path}
         image={`/api/og/generate?title=${encodeURIComponent(about.title)}`}
         author={{
-          name: Talha Ibn Hafiz.name,
+          name: Person.name,
           url: `${baseURL}${about.path}`,
           image: `${baseURL}${person.avatar}`,
         }}
