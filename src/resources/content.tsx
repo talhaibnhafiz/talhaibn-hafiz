@@ -4,24 +4,21 @@ import { Line, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Talha Ibn",
   lastName: "Hafiz",
-  name: 'Talha Ibn Hafiz',
-  role: "CS Enthuasiast",
+  name: "Talha Ibn Hafiz",
+  role: "CS Enthusiast", // বানান ঠিক করা হয়েছে
   avatar: "/images/avatar.jpg",
   email: "talhaibnhafiz2007@gmail.com",
-  location: "Asia/Bangladesh", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bangla"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Dhaka", // সঠিক IANA টাইমজোন দেওয়া হয়েছে
+  languages: ["English", "Bangla"],
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>, // ' এর জায়গায় &apos; দেওয়া হয়েছে
   description: <>My weekly newsletter about creativity and engineering</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
@@ -76,9 +73,9 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Talha , a High School student at <Text as="span" size="xl" weight="strong">Rajshahi, Govt. City College .</Text>, It's my last year. <br /> From,Bangladesh.
-</>
-  ),
+      I&apos;m Talha, a High School student at <Text as="span" size="xl" weight="strong">Rajshahi Govt. City College</Text>. It&apos;s my last year. <br /> From Bangladesh.
+    </>
+  ), // কমা, স্পেস এবং &apos; ঠিক করা হয়েছে
 };
 
 const about: About = {
@@ -102,12 +99,12 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-       Talha is an intermidiate last Year student Of Rajshahi Govt. City College.
+        Talha is an intermediate last year student of Rajshahi Govt. City College.
       </>
-    ),
+    ), // বানান ঠিক করা হয়েছে
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
@@ -125,7 +122,6 @@ const about: About = {
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
@@ -153,7 +149,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -167,7 +163,7 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
@@ -181,7 +177,6 @@ const about: About = {
             icon: "figma",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
@@ -216,7 +211,6 @@ const about: About = {
             icon: "supabase",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
@@ -235,8 +229,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -244,8 +236,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -253,8 +243,6 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
