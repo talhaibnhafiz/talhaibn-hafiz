@@ -4,8 +4,8 @@ import { Line, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Talha Ibn",
   lastName: "Hafiz",
-  name: `Selene Yu`,
-  role: "CS Enthuasist",
+  name: 'Talha Ibn Hafiz',
+  role: "CS Enthuasiast",
   avatar: "/images/avatar.jpg",
   email: "talhaibnhafiz2007@gmail.com",
   location: "Asia/Bangladesh", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: High School Student (Science) at Rajshahi Govt. City College,
+  headline: "High School Student (Science) at Rajshahi Govt. City College",
   featured: {
     display: true,
     title: (
@@ -102,7 +102,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-       Talha is anIntermidiate last Year student Of Rajshahi Govt. City College.
+       Talha is an intermidiate last Year student Of Rajshahi Govt. City College.
       </>
     ),
   },
